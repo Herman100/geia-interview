@@ -2,18 +2,23 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
+import patientRouter from "./routes/patient.route.js";
+import doctorRouter from "./routes/doctor.route.js";
 
 const app = express();
 dotenv.config();
 
-// Middlewares
+// MIDDLEWARES
 app.use(cors());
 app.use(express.json());
 
-// Testing if server if working
+//ROUTES
 app.get("/", (req, res) => {
-  res.send("Server is working");
+  res.send("Server is live");
 });
+
+app.use("/patients", patientRouter);
+app.use("/doctors", doctorRouter);
 
 // SETTING UP THE SERVER AND DATABASE
 async function main() {
