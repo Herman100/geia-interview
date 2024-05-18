@@ -1,0 +1,75 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.booking_title {
+  color: #006769;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 16px;
+}
+
+.booking p {
+  padding: 0 44px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 16px;
+}
+
+.form label {
+  color: #006769;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 300px;
+  padding: 8px 16px;
+  border: 1px solid #006769;
+  border-radius: 4px;
+  color: #006769;
+}
+
+.form textarea {
+  height: 100px;
+}
+
+.form input::placeholder,
+.form select::placeholder,
+.form textarea::placeholder {
+  color: #0067699c;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: none;
+}
+
+.submit_button {
+  font-size: 10px;
+  background-color: #006769;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 6px 24px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+}

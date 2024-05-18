@@ -1,0 +1,152 @@
+.container {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  width: 100%;
+  background-color: #006769;
+}
+
+.form_container {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  width: 280px;
+  border-radius: 8px;
+  color: #006769;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 0 30px 0;
+  color: #006769;
+}
+
+.form p {
+  font-size: 12px;
+  color: #006769;
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.input {
+  border: none;
+  border-bottom: 1.5px solid #006769;
+  color: #006769;
+  padding: 8px;
+  width: 200px;
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  color: #006769;
+  font-size: 12px;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1.5px solid #006769;
+  border-radius: 2px;
+}
+
+.svg {
+  filter: invert(94%) sepia(10%) saturate(11%) hue-rotate(320deg)
+    brightness(80%) contrast(83%);
+}
+
+.renavigation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account_status {
+  color: #c7c6c6;
+  font-size: 14px;
+}
+
+.password_forgot {
+  color: #c7c6c6;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.password_forgot:hover {
+  color: #006769;
+}
+
+.error {
+  color: red !important;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.message {
+  color: #b0f1b0;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.loginButton,
+.resetButton {
+  font-size: 10px;
+  margin-left: 16px;
+  background-color: #006769;
+  color: #fff;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.loginButton:hover,
+.resetButton:hover {
+  background-color: #fff;
+  color: #006769;
+  border: 1px solid #006769;
+}
+
+.account_status a {
+  color: #006769;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.account_status a:hover {
+  color: #16a9ac;
+}
