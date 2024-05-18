@@ -4,19 +4,19 @@ const patientSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: false,
     },
     age: {
       type: Number,
-      required: true,
+      required: false,
     },
     address: {
       type: String,
-      required: true,
+      required: false,
     },
     phone: {
       type: Number,
-      required: true,
+      required: false,
     },
     email: {
       type: String,
@@ -26,9 +26,37 @@ const patientSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    profession: {
+
+    uid: {
       type: String,
       required: true,
+    },
+    message: {
+      type: String,
+      required: false,
+    },
+
+    appointments: [
+      {
+        name: { type: String, required: true },
+        age: { type: Number, required: true },
+        date: { type: String, required: true },
+        time: { type: String, required: true },
+        email: { type: String, required: true },
+        phone: { type: Number, required: true },
+        service: { type: String, required: true },
+        message: { type: String, required: false },
+      },
+    ],
+
+    profession: {
+      type: String,
+      required: false,
+    },
+
+    role: {
+      type: String,
+      required: false,
     },
   },
   {

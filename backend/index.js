@@ -33,8 +33,8 @@ async function main() {
     );
     console.log("Successfully connected to Database");
     // Declaring Port and Use of Server
-    app.listen(3000, () => {
-      console.log("Server is running on port 3000");
+    app.listen(5000, () => {
+      console.log("Server is running on port 5000");
     });
   } catch (error) {
     console.log("Error connecting to MongoDB", error);
